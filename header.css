@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+
+
+*{
+   margin:0 auto;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+
+
+.header{
+    display: flex;
+    background-image: url(./img/Rectangle3.png);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 414px;
+    align-items: center;
+    height: 100%;
+}
+
+
+.header__contTittle--tittle{
+    color:#fff;
+    margin-top: 55px;
+}
+
+.header__article1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__article1--div1subtittle{
+    margin-top: 40px;
+    width: 305px;
+    font-size: 48px;
+}
+
+.header__article1--image1{
+    margin-top: 30px;
+
+}
+
+.header__contTittle--menu{
+    display: none;
+
+}
+
+.header__contTittle--button{
+    display: none;
+}
+
+.header__article1--div1H3{
+    display: none;
+}
+
+.header__article1--div1Button1{
+    display: none;
+}
+
+
+.header__article1--div1Button2{
+    display: none;
+}
+
+
+.header__article1--div2{
+    display: none;
+}
+
+.i{
+    display: none;
+}
+
+.header__article2--logosEscritorio{
+    display: none;
+}
+
+
+
+/* Desde Aca Comenzamos el estilo para Escritorio*/
+
+@media screen and (min-width:415px) {
+    
+.header{
+    background-image: url(./img/Rectangle1.png);
+    background-repeat: no-repeat;
+    max-width: 1065px;
+    height: 100%;
+ }
+
+
+.header__contTittle{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+    height: 80px;
+}
+
+
+.header__contTittle--tittle{
+    color:#fff;
+    font-size: 24px;
+    padding-bottom: 50px;
+}
+
+.header__contTittle--menu{
+    display: flex;
+    list-style:none;
+    padding: 0%;
+    color: #fff;
+}
+
+
+.header__contTittle--button{
+    display:flex;
+    width: 89px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    align-items: center;
+    justify-content:center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.header__conTittle--menuLi{
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.header__conTittle--menuLi a{
+    padding: 0%;
+}
+
+
+.header__article1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.header__article1--div1{
+    width: 450px;
+}
+
+
+.header__article1--div1H3{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size: 20px;
+}
+
+
+.header__article1--div1subtittle{
+    width: 430px;
+    font-size: 65px;
+}
+
+
+
+.header__article1--div2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__article1--div2Button1{
+    margin-top: 20px;
+    display: flex;
+    height: 36px;
+    width: 114px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    background-color: rgba(14, 14, 14, 0.78);
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em; 
+    align-items: center;   
+    justify-content:center;
+    cursor: pointer;
+
+}
+
+.header__article1--div2Button2{
+    margin-top: 20px;
+    display: flex;
+    height: 36px;
+    width: 149px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em; 
+    align-items: center;   
+    justify-content:center;
+    padding-left: 15px;
+
+}
+
+
+.i{
+    display: flex;
+    padding-left: 10px;
+}
+
+.header__article2--logos1{
+    display: none;
+}
+
+.header__article2--logos2{
+    display: none;
+}
+
+.header__article2--logosEscritorio{
+    display: flex;
+}
+
+
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
+.footer{
+    display: flex;
+    max-width: 414px;
+    flex-direction: column;
+}
+
+.footer--tittle__desktop{
+    display: none;
+}
+
+.footer--articles{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin : 10px 118px 0 109px;
+}
+
+.footer--article__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 187px;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.footer--article__container > h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.color{
+    font-weight: bold;
+    color:#2FDF84;
+}
+
+.footer--copyright{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 65px;
+}
+
+.footer--copyright > h3{
+    font-weight: 900;
+    font-size: 2.1rem;
+    color: #656565;
+}
+
+.box {
+    width: 100%;
+    height: 25px;
+    background-color: #2FDF84;
+}
+
+.allRights{
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #ABABAB;
+    margin-top: 3px;
+    height: 80px;
+}
+
+
+/* Nota : aunque el diseño en figma tiene
+el media query a 415px creo que lo deberiamos 
+considerar a partir de los 610px, que es donde 
+la imagen del header y el logo cambia*/
+
+@media screen and (min-width:415px) {
+
+    .footer{
+        display: flex;
+        max-width: 1065px;  
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer--tittle__mobile{
+        display: none;
+    }
+
+    .footer--tittle__desktop{
+        display: block;
+        margin-left: 115px;
+        flex-direction: column;
+        font-style: normal;
+        font-weight: 700 bold;
+        font-size: 24px;
+        letter-spacing: -1px;
+        
+    }
+
+    .footer--articles{
+        display:flex;
+        flex-direction: row;     
+        
+    }
+
+    .footer--article__container{
+        display: block;
+        margin-left: 39px;
+        width: 187px;
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+    
+    .box {
+        width: 239px;
+        height: 25px;
+        background-color: #2FDF84;
+    }
+}

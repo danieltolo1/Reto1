@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
+.content{
+    display: flex;
+    flex-direction: column;
+    max-width: 414px;
+    background-image: url(./img/Blue_bg_mobile.png);
+    background-repeat: no-repeat;
+    align-items: center;
+    height: 804px;
+    margin-bottom: 80px;
+}
+
+.features{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 120px;
+    color: white;
+
+}
+
+.features__text--mobile > h2{
+    font-weight: 700 bold;
+    font-size: 30px;
+    letter-spacing: -1px;
+}
+
+.features__text--desktop > h2{
+    display: none;
+}
+
+.features__text--main{
+    font-weight:400 normal;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.features__text--main--desktop{
+    display: none;
+}
+
+.features__button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    
+}
+
+.features__button>button{   
+    padding: 10px; 
+    font-weight: 700 bold;
+    color: white;
+    background-color: rgba(18, 212, 255, 0.78);;
+    font-size: 18px;
+    border-radius: 45px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.phone__desktop{
+    display: none;
+}
+
+.phone{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+
+@media screen and (min-width:415px) {
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        max-width: 1065px;        
+        background-image: url(./img/Blue_bg_desktop.png);
+        background-repeat: no-repeat;
+        height: 620px;
+        margin-bottom: 80px;
+    }
+
+
+    .features__text{
+        display: flex;
+        flex-direction: column;
+        max-width: 532px;
+        min-width: 510px;
+        width: 100%;
+    }
+    
+    .features__text--mobile > h2{
+        display: none;
+    }
+
+    .features__text--desktop > h2{
+        display: block;
+        font-weight: 700 bold;
+        font-size: 36px;
+        letter-spacing: -1px;
+       
+    }
+
+    .features__text--main{
+        display: none;
+    }
+
+    .features__text--main--desktop{
+        display: block;
+        margin-left: 0;
+        margin-top: 32px;
+        margin-bottom: 30px;
+        font-weight:400 ;
+        font-size: 18px;
+    }
+    .phone__desktop{
+        display: block;
+        align-content: center;
+        margin-top: 230px;        
+    }
+        
+    .phone{
+        display: none;
+    }
+
+    .features__button{
+        display: block;
+        margin-left: 0;        
+    }
+}
