@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./header.css" />
     <link rel="stylesheet" href="./body.css" />
     <link rel="stylesheet" href="./footer.css" />
-    <link rel="stylesheet" href="./form.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -18,46 +17,35 @@
 <body>
     <header class="header">
         <div class="header__contTittle">
-                <img class="header__contTittle--logoMobile" src="./img/logoMobile.png">
-                <img class="header__contTittle--logoDesk" src="./img/logoDesk.png">
-           
+            <h1 class="header__contTittle--tittle">lessins</h1>
+
             <ul class="header__contTittle--menu">
-                <li class="header__conTittle--menuLia">Nosotros</li>
-                <li class="header__conTittle--menuLi">Viajeros</li>
-                <li class="header__conTittle--menuLi">Empresas</li>
-                <li class="header__conTittle--menuLi">Vinculados</li>
+                <li class="header__conTittle--menuLia">Products</li>
+                <li class="header__conTittle--menuLi">Developers</li>
+                <li class="header__conTittle--menuLi">Company</li>
+                <li class="header__conTittle--menuLi">Pricing</li>
             </ul>
-            <a href="https://www.taxislibres.com.co/pidataxi/">
-            <button class="header__contTittle--button">PIDE UN TAXI</button>
-             </a>
+
+            <button class="header__contTittle--button" onclick="inicio()">Sign in</button>
         </div>
 
         <article class="header__article1">
             <div class="header__article1--div1">
                 <h2 class="header__article1--div1subtittle">
-                    Inscribete en nuestro <br> <div class="header__article1--2022">HACKATHON 2022</div>
+                    Education for everyone in the internet
                 </h2>
                 <h3 class="header__article1--div1H3">
-                    Si te gusta, programar, el diseño, la ingenieria 
-                    deseas apoyar con ideas  y proyectos innovadores en donde resolvamos los retos diarios de movilidad y sostenibilidad en Colombia y ganar premios en efectivo "es tu oportunidad de participar en el"
-                    <b>HACKATHON 2022</b> <br>llena el formulario y sigue los pasos
+                    Thousands of people around the world are already learning new things
+                    in <b>lessins</b>, what are you waiting for to join?
                 </h3>
-                
-            </div>
-            
-            <form class="form">
-                <h2 class="form__h2">COMIENZA AQUI </h2>
-                <p class="form__p" type="Nombre:"><input  class="form__input"placeholder="Escribe tu nombre aqui.."></input></p>
-                <p class="form__p" type="Email:"><input class="form__input" placeholder="Escribe tu Correo Electronico.."></input></p>
-                <p class="form__p" type="Message:"><input class="form__input" placeholder="Cuentanos porque quieres participar.."></input></p>
-                <button class="form__btn">Envio Mensaje</button>
-                <div class="form__div">
-                  <span class="fa fa-phone form__div__span"></span>(601)211111   
-                  <span class="fa fa-envelope-o form__div__span"></span> contacto@taxilibres.com
+                <div class="header__article1--div2">
+                    <button class="header__article1--div2Button1" onclick="registro()">Start now</button>
+                    <button class="header__article1--div2Button2">
+                        Contact sales <i class="fa-solid fa-angle-right i"></i>
+                    </button>
                 </div>
-              </form>
-
-
+            </div>
+            <img class="header__article1--image1" src="./img/celu1.png" alt="Foto_Celular" />
         </article>
 
         <article class="header__article2">
