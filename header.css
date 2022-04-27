@@ -27,10 +27,26 @@ html{
     height: 100%;
 }
 
+.header__contTittle{
+    display: flex;
+    background-color: transparent;
+}
+
+.header__contTittle--logoDesk{
+    display: none;
+}
+
+.header__contTittle--logoMobile{
+    display: flex;
+    margin-top: 40px;
+}
+
 
 .header__contTittle--tittle{
     color:#fff;
     margin-top: 55px;
+    
+    
 }
 
 .header__article1{
@@ -43,6 +59,12 @@ html{
     margin-top: 40px;
     width: 305px;
     font-size: 48px;
+    text-align: center;
+}
+
+
+.header__article1--2022{
+    text-align: center;
 }
 
 .header__article1--image1{
@@ -99,6 +121,20 @@ html{
  }
 
 
+ .header__contTittle{
+     background-color: black;
+ }
+
+
+ .header__contTittle--logoDesk{
+     margin-top: 10px;
+     display: flex;
+ }
+
+ .header__contTittle--logoMobile{
+     display: none;
+ }
+
 .header__contTittle{
     width: 100%;
     display: flex;
@@ -125,16 +161,16 @@ html{
 
 .header__contTittle--button{
     display:flex;
-    width: 89px;
-    height: 30px;
+    width: 150px;
+    height: 33px;
     border-radius: 15px;
-    border: none;
+    border: 2px solid #fff;
     align-items: center;
     justify-content:center;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #fff;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -155,6 +191,7 @@ html{
     align-items: center;
     width: 100%;
     justify-content: space-around;
+    
 }
 
 
@@ -168,6 +205,8 @@ html{
     font-family: 'Roboto', sans-serif;
     font-weight:400;
     font-size: 20px;
+    text-align: justify;
+    text-justify: inter-palabra;
 }
 
 
